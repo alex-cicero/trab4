@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script src="lib/jquery-3.2.1.min.js"></script>
+    </head>
+    <body>
+        <script>
+            $('#subg').attr('disabled','disabled');
+            $('#genero').on('change',function()
+            {
+                var genero = $('#genero').val();
+                var valo();
+                if(genero == 'Acadêmico')
+                {
+                  $('#subg').removeAttr('disabled');
+                  valo() = ;
+                  val = [0,2,4,6,8];
+                }
+                else
+                {
+                    valores = [];
+                }
+                $('#valor').empty();
+                if(valores.length == 0)
+                {
+                    $('#valor').attr('disabled','disabled');
+                }
+                else
+                {
+                    $('#valor').removeAttr('disabled');
+                    $('#valor').append('<option></option>');
+                    for(var i=0; i<valores.length; i++)
+                    {
+                        $('#valor').append('<option>'+valores[i]+'</option>');
+                    }
+                }
+
+                console.log('Tipo Mudou', tipoSelecionado);
+            });
+
+        </script>
+    </body>
+</html>
